@@ -2,7 +2,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CalculatorTest {
     Calculator calculator;
@@ -20,8 +19,7 @@ public class CalculatorTest {
 
     @Test
     //проверяем обычное суммирование калькулятора (2+2=4)
-    public void testPlus() {
-        assertEquals(4, calculator.plus.apply(2, 2));
+    public void testPlus() { Assertions.assertEquals(4, calculator.plus.apply(2, 2));
     }
 
     @Test
